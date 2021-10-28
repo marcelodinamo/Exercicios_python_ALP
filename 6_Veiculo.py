@@ -1,0 +1,12 @@
+preco_f = float(input("Digite o preço de fabrica: "))
+lucro = float(input("Digite o percentual de lucro: "))
+imposto = float(input("Digite o percentual de imposto: "))
+lucro_d = preco_f * (lucro / 100)
+v_imposto = preco_f * (imposto / 100)
+v_veiculo = preco_f + v_imposto + lucro_d
+print('-' * 33)
+print("Lucro do distribuidor: R$ {:.2f}".format(lucro_d))
+print('-' * 33)
+print("Valor do imposto.....: R$ {:.2f}".format(v_imposto))
+print('-' * 33)
+print("Valor do veiculo.....: R$ {:.2f}".format(v_veiculo))
